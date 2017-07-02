@@ -9,20 +9,32 @@ type of application.
 Eventually we'll want to hook this up to a RESTful API. We'll need the following endpoints
 
 ### Performance
-GET: /performance/{performance-id} 						//Retrieve data for a specific performance
-GET: /performance/{performance-id}/shows				//Retrieve all shows for a specific performance
+Retrieve data for a specific performance
+GET: /performance/{performance-id}
+
+Retrieve all shows for a specific performance
+GET: /performance/{performance-id}/shows				
 
 ### Shows
-GET: /shows/{show-id} 									//Retrieve data for a specific show
-GET: /shows/{year} 										//Retrieve all shows for a specific year
+Retrieve data for a specific show
+GET: /shows/{show-id}
+
+Retrieve all shows for a specific year
+GET: /shows/{year}
 
 ### Venue
-GET: /venue/{venue-id} 									//Retrieve data about a specific venue
-GET: /venue/{venue-id}/shows 							//Retrieve all shows playing at a specific venue
+Retrieve data about a specific venue
+GET: /venue/{venue-id}
+
+Retrieve all shows playing at a specific venue
+GET: /venue/{venue-id}/shows
 
 ### Organisation
-GET: /organisation/{organisation-id} 					//Retrieve data about a specific organisation
-GET: /organisation/{organisation-id}/shows 				//Retrieve all shows produced by a specific organisation
+Retrieve data about a specific organisation
+GET: /organisation/{organisation-id}
+
+Retrieve all shows produced by a specific organisation
+GET: /organisation/{organisation-id}/shows
 
 
 
