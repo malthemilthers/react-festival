@@ -1,0 +1,118 @@
+.App { }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 90px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+/**
+ * Event list
+ */
+
+.event-list {
+  max-width: 1000px;
+  margin: 2rem auto;
+  font-family: "Hill";
+}
+
+  .event-list-item {
+    position: relative;
+    padding: 2.5rem 0;
+    padding-left: 250px;
+    border-bottom: 1px solid #CFCFCF;
+
+  }
+    .event-list-item-image {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .event-list-item-title {
+      margin-top: .25rem;
+      margin-bottom: .5rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    .event-list-item-time {
+
+    }
+
+    .event-list-item-production {
+
+    }
+
+
+/**
+ * Daypicker
+ */
+
+.daypicker {
+  display: flex;
+  /* max-width: 1000px; */
+  margin: 0 auto;
+  height: 80px;
+ /* border-left: 1px solid lightgray;*/
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+  .daypicker-day {
+    border-right: 1px solid lightgray;
+    display: flex;
+    width: 100px;
+    flex-grow: 1;
+    color: #464646;
+    cursor: pointer;
+  }
+
+    .daypicker-day:first-of-type {
+      background-color: #FF4646;
+      color: #fff;
+
+    }
+
+    .daypicker-day:last-of-type {
+      border-right: 0;
+    }
+
+    .daypicker-day-content {
+      align-self: center;
+      text-align: center;
+      width: 100%;
+    }
+
+    .daypicker-day-name {
+      text-transform: uppercase;
+      font-family: Hill-DemiBold;
+      font-size: 13px;
+    }
+
+    .daypicker-day-date {
+      font-family: Hill;
+      font-size: 16px;
+      margin-top: .5rem;
+      margin-bottom: -2px; /* Compensate for balance */
+    }
+
