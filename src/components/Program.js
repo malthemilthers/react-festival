@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
 
+import samplePerformances from '../sample-performances';
+
 import Performance from './Performance';
 import DayPicker from './DayPicker';
-import samplePerformances from '../sample-performances';
+import Search from './Search';
+import FilterSelect from './FilterSelect';
+
+
+const yearOptions = [2015, 2016, 2017];
+const categoryOptions = ['All', 'Danseteater', 'Børneteater', 'Drama', 'Musikteater'];
+const areaOptions = ['All', 'København SV', 'København N', 'København Ø'];
 
 class Program extends Component {
 
@@ -51,9 +59,22 @@ class Program extends Component {
 	render() {
 		return (
 			<div className="program">
-				<h1>Program</h1>
-				<button onClick={this.loadPerformances}>Load Performances </button>
-				<hr/>
+				<div className="program-filters">
+					
+					<div className="program-filter-blocks">
+						<FilterSelect title="Year" options={yearOptions} defaultOption="2017"/>
+						<FilterSelect title="Category" options={categoryOptions} defaultOption="Danseteater"/>
+						<FilterSelect title="Area" options={areaOptions} defaultOption="København N"/>
+					</div>
+
+					<div className="program-filter-search">
+						<Search/>
+					</div>
+
+					{/*<button onClick={this.loadPerformances}>Load Performances </button>*/}
+				</div>
+				
+			
 				<DayPicker loadDay={this.loadDay}/>
 				<div className="event-list">
 					{

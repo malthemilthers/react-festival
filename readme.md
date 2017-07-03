@@ -8,6 +8,10 @@ type of application.
 ## API plan
 Eventually we'll want to hook this up to a RESTful API. We'll need the following endpoints
 
+### Festival
+Retrieve startDate, endDate and other festival specific information for a given year.
+GET: /festival/{year}
+
 ### Performance
 Retrieve data for a specific performance
 GET: /performance/{performance-id}

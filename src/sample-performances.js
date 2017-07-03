@@ -1,5 +1,4 @@
 const performances = [
-
 	{
 		title: 'Omnipresence',
 		venue: 'Højbro Plads',

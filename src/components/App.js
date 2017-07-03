@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header title="Welcome to the Twisting Feather Festival!"/>
+        <Header title="Twisting Feather Festival!"/>
         
         <Program />
 

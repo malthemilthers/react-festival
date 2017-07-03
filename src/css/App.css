@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .App { }
 
 .App-logo {
@@ -6,11 +9,25 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 90px;
-  padding: 20px;
+  position: relative;
+  background-color: #FF4646;
+  height: 80px;
   color: white;
-  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.App-header-inner {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+
+}
+.App-header h2 {
+  position: relative;
+  margin: 0;
+  top: 50%;
+  transform:translateY(-50%);
 }
 
 .App-intro {
@@ -115,4 +132,77 @@
       margin-top: .5rem;
       margin-bottom: -2px; /* Compensate for balance */
     }
+
+
+/**
+ * Program-filters
+ */
+.program-filters {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+
+  .program-filter-blocks {
+    margin-bottom: 2.5rem;
+   }
+    .program-filter-blocks:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+.filter-select {
+  border: 1px solid lightgray;
+  padding: 1.125rem;
+  padding-right: 2.5rem;
+}
+
+.filter-select select {
+  display: none;
+}
+
+.program-filter-blocks .filter-select {
+  float: left;
+  border-right: none;
+}
+.program-filter-blocks .filter-select:last-of-type {
+  border-right: 1px solid lightgray;
+}
+
+  .filter-select-title {
+    font-family: Hill;
+    font-size: 14px;
+    color: #8A8A8A;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .filter-select-selected-option {
+    /* 2017: */
+    font-family: Hill-DemiBold;
+    font-size: 26px;
+    color: #FF4646;
+    text-transform: uppercase;
+    margin-top: .5rem;
+  }
+
+/**
+ * Search-bar
+ */
+.search-bar {
+
+}
+  .search-bar-input {
+    border: none;
+    font-size: 3.125rem;
+    font-family: Hill-DemiBold;
+    text-transform: uppercase;
+  }
+
+
+
+
+
 

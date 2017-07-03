@@ -5,8 +5,10 @@ import logo from '../logo.svg';
 const Header = (props) => {
 	return (
 			<div className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<h2>{props.title}</h2>
+				<div className="App-header-inner">
+					{/*<img src={logo} className="App-logo" alt="logo" />*/}
+					<h2>{props.title}</h2>
+				</div>
 			</div>
 	);
 }
